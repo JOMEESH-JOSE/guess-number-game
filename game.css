@@ -1,0 +1,13 @@
+body
+{
+  background:skyblue;
+  color:darkblue;
+  text-align:center;
+  margin-top:120px;
+  font-size:2em;
+}
+input,button{
+  font-size:1.5em;
+  text-align:center;
+  border-radius:25px;
+}

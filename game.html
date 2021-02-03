@@ -1,0 +1,29 @@
+<html>
+  <head>
+ <link rel="stylesheet"  type="text/css" href="game.css" />
+    <body>
+      <div> guess the number in my mind between 1 and 100</div>
+      <input type="number" id="in">
+      <button onclick="response()">check</button>
+      <div id="out">RESULT</div>
+    </body>
+    <script>
+          var guess = Math.floor(Math.random()*100)+1;
+function response()
+{
+  var n = document.getElementById("in").value;
+  if(n == guess)
+    {
+      document.getElementById("out").innerHTML="Congrats ! you got it correctly";
+    }
+  else if(n>guess)
+ {
+  document.getElementById("out").innerHTML="guess a smaller number"; 
+ }
+  else
+    {
+      document.getElementById("out").innerHTML=" guess a greater number";
+    }
+}
+</script>
+    </html> 
